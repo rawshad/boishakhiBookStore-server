@@ -81,6 +81,4 @@ app.delete('/deleteRegistration/:id', (req, res) => {
 });
 
 
-app.listen(port, () => {
-  console.log(port);
-})
+app.listen(process.env.PORT || port)
